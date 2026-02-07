@@ -92,8 +92,10 @@ uv run main.py
 1) Реализован метод загрузки заявок из файла CSV, расположенного в GoogleDocs;
 2) Реализованы методы для получения списка заявок за период и трудозатрат по номеру (ID) заявки;
 3) Реализованы два инструмента (tool):
-3.1 get_tickets(begDate: str,endDate: str) - возвращает JSON с заявками за период между begDate и endDate;
+``` python
+get_tickets(begDate: str,endDate: str) - возвращает JSON с заявками за период между begDate и endDate;
 get_work(ticket_id:int) - возвращает трудозатраты заявки по ID заявки
+```
 4) Сформулирован системный промпт:
 ``` python
  sys_msg = SystemMessage(
